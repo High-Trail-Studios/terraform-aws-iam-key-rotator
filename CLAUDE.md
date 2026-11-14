@@ -57,5 +57,7 @@ per run.
 
 ## Not done yet
 
-README, `examples/basic` (wired to sns-relay), `tests/module.tftest.hcl`, CI
-workflows, `docs/ci.md`. Not yet applied against real AWS.
+`examples/basic` (wired to sns-relay), `tests/module.tftest.hcl`, CI
+workflows, `docs/ci.md`. Not yet applied against real AWS. The README states
+behaviour precisely (digest format, IAM table, inputs); keep it in step with
+the code.
