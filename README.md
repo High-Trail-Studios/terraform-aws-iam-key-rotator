@@ -38,7 +38,7 @@ less dangerous. It does not make them good.
 
 ```hcl
 module "iam_key_rotator" {
-  source = "git::https://github.com/<org>/iam-key-rotator.git?ref=v0.1.0"
+  source = "git::https://github.com/<org>/terraform-aws-iam-key-rotator.git?ref=v0.1.0"
 
   # Optional: where the per-run digest goes. Without it, the digest is only logged.
   alert_topic_arn = module.sns_relay.topic_arns["security"]
