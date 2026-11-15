@@ -57,7 +57,9 @@ per run.
 
 ## Not done yet
 
-`examples/basic` (wired to sns-relay), `tests/module.tftest.hcl`, CI
-workflows, `docs/ci.md`. Not yet applied against real AWS. The README states
+`tests/module.tftest.hcl`, CI workflows, `docs/ci.md`. Not yet applied
+against real AWS: `tests/e2e/` is the sandbox runbook for that (3 days,
+thresholds cut to 1/2/3, isolated tag key, path and SSM prefix). Tag `v0.1.0`
+only after it passes; the README quick start already references that tag. The README states
 behaviour precisely (digest format, IAM table, inputs); keep it in step with
 the code.
