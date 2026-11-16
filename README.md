@@ -438,6 +438,10 @@ terraform fmt -check -recursive
 terraform init -backend=false && terraform validate
 ```
 
+[examples/basic](examples/basic) wires the module to sns-relay for Slack
+delivery. [tests/e2e](tests/e2e) is a three-day runbook and configuration for
+testing against real AWS in a sandbox account with one throwaway user.
+
 `src/rotator/policy.py` makes every decision as a pure function of the keys,
 the state record and the clock. `handler.py` carries out the decisions, and
 `aws.py` is a thin wrapper over the AWS APIs. Most behavior changes belong in
